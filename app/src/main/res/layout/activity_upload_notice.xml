@@ -18,37 +18,35 @@
         >
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/selectImage"
             android:layout_width="130dp"
             android:layout_height="150dp"
-            android:elevation="20dp"
             android:layout_margin="10dp"
 
-            >
+            android:elevation="20dp">
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:gravity="center"
-                >
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circle_red"
-                    android:src="@drawable/ic_baseline_add_a_photo_24"
+                    android:contentDescription="@string/ghjk"
                     android:padding="15dp"
-                    >
+                    android:src="@drawable/ic_baseline_add_a_photo_24">
 
                 </ImageView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/lightgray"
                     android:layout_margin="10dp"
-                    >
+                    android:background="@color/lightgray">
 
                 </View>
 
@@ -59,7 +57,7 @@
                     android:gravity="center"
                     android:padding="5dp"
 
-                    android:text="Select Image"
+                    android:text="@string/select_image"
                     android:textColor="@color/textColor"
                     android:textStyle="bold">
 
@@ -80,26 +78,27 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/noticeTitle"
+                android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter Notice Title "
 
-                />
+                android:hint="@string/enter_notice_title"
+                android:textColorHint="#546E7A"
+                tools:ignore="TouchTargetSizeCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/uploadNoticeBtn"
+            android:id="@+id/uploadBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Upload Notice"
-             android:background="@drawable/button"
+            android:text="@string/upload_notice"
             android:textAllCaps="false"
-            android:textStyle="bold"
-            android:textSize="15sp"
-           >
+            android:textSize="12sp"
+
+
+            android:textStyle="bold">
 
 
         </com.google.android.material.button.MaterialButton>
@@ -117,7 +116,9 @@
             <ImageView
                 android:id="@+id/image"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:contentDescription="@string/ayd"
+                tools:ignore="ImageContrastCheck" />
 
         </com.google.android.material.card.MaterialCardView>
 

@@ -94,6 +94,7 @@
             android:layout_height="150dp"
             android:elevation="20dp"
             android:layout_margin="10dp"
+            android:id="@+id/uploadImage"
 
             >
 
@@ -125,7 +126,7 @@
                 </View>
 
                 <TextView
-                    android:id="@+id/uploadImage"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -172,6 +173,7 @@
             android:layout_height="150dp"
             android:elevation="20dp"
             android:layout_margin="10dp"
+            android:id="@+id/uploadEbook"
 
             >
 
@@ -203,7 +205,7 @@
                 </View>
 
                 <TextView
-                    android:id="@+id/uploadEbook"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -231,7 +233,7 @@
             android:layout_height="150dp"
             android:elevation="20dp"
             android:layout_margin="10dp"
-
+            android:id="@+id/updateFaculty"
             >
 
 
@@ -262,7 +264,7 @@
                 </View>
 
                 <TextView
-                    android:id="@+id/updateFaculty"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -303,7 +305,7 @@
             android:layout_height="150dp"
             android:elevation="20dp"
             android:layout_margin="10dp"
-
+            android:id="@+id/deleteNotice"
             >
 
 
@@ -334,7 +336,7 @@
                 </View>
 
                 <TextView
-                    android:id="@+id/deleteNotice"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"

@@ -6,11 +6,10 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-        CardView uploadNotice;
+        CardView uploadNotice,uploadImage,uploadEbook,updateFaculty,deleteNotice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         uploadNotice=findViewById(R.id.uploadNotice);
-       // uploadImage=findViewById(R.id.uploadImage);
-      //  uploadEbook=findViewById(R.id.uploadEbook);
-      //  updateFaculty=findViewById(R.id.updateFaculty);
-       // deleteNotice=findViewById(R.id.deleteNotice);
+        uploadImage=findViewById(R.id.uploadImage);
+        uploadEbook=findViewById(R.id.uploadEbook);
+        updateFaculty=findViewById(R.id.updateFaculty);
+        deleteNotice=findViewById(R.id.deleteNotice);
 
 
         uploadNotice.setOnClickListener(new View.OnClickListener() {
