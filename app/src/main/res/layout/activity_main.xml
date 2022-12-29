@@ -35,43 +35,42 @@
             android:layout_height="150dp"
             android:elevation="20dp"
             android:layout_margin="10dp"
+            android:id="@+id/uploadNotice"
 
             >
 
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:gravity="center"
-                >
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/circle_red"
-                    android:src="@drawable/ic_baseline_event_24"
                     android:padding="15dp"
-                    >
+                    android:src="@drawable/ic_baseline_event_24">
 
                 </ImageView>
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/lightgray"
                     android:layout_margin="10dp"
-                    >
+                    android:background="@color/lightgray">
 
                 </View>
 
                 <TextView
-                    android:id="@+id/uploadNotice"
+                    android:id="@+id/uploadNotice1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:padding="5dp"
 
+                    android:padding="5dp"
                     android:text="Upload Notice"
                     android:textColor="@color/textColor"
                     android:textStyle="bold">
@@ -86,7 +85,11 @@
 
 
 
-        </androidx.cardview.widget.CardView>    <androidx.cardview.widget.CardView
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
             android:layout_width="130dp"
             android:layout_height="150dp"
             android:elevation="20dp"
