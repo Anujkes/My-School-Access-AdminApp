@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".UploadImageActivity">
+    tools:context=".UploadPdfActivity">
 
 
 
@@ -18,7 +18,7 @@
         >
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/galleryImage"
+            android:id="@+id/uploadPdf"
             android:layout_width="130dp"
             android:layout_height="150dp"
             android:layout_margin="10dp"
@@ -35,10 +35,10 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circle_purple"
+                    android:background="@drawable/circle_pink"
                     android:contentDescription="@string/ghjk"
                     android:padding="15dp"
-                    android:src="@drawable/ic_baseline_add_a_photo_24">
+                    android:src="@drawable/ic_baseline_picture_as_pdf_24">
 
                 </ImageView>
 
@@ -57,7 +57,7 @@
                     android:gravity="center"
                     android:padding="5dp"
 
-                    android:text="@string/select_image"
+                    android:text="Upload Pdf"
                     android:textColor="@color/textColor"
                     android:textStyle="bold">
 
@@ -69,25 +69,42 @@
 
         </androidx.cardview.widget.CardView>
 
-       <Spinner
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:id="@+id/category"
-           android:spinnerMode="dropdown"
-           android:background="@android:drawable/btn_dropdown"
-           android:layout_marginTop="16dp"
-           android:layout_marginBottom="16dp"
-           >
 
-       </Spinner>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:gravity="center"
+            android:id="@+id/pdftextview"
+            >
+
+
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pdftitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter pdf title"
+                android:textColorHint="#546E7A"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/uploadImageBtn"
+            android:id="@+id/uploadPdfBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Upload Image"
+            android:text="Upload Pdf"
             android:textAllCaps="false"
             android:textSize="12sp"
 
@@ -98,23 +115,7 @@
         </com.google.android.material.button.MaterialButton>
 
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_marginTop="16dp"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:elevation="20dp"
-            android:padding="7dp"
 
-            >
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/ayd"
-                tools:ignore="ImageContrastCheck" />
-
-        </com.google.android.material.card.MaterialCardView>
 
 
     </LinearLayout>

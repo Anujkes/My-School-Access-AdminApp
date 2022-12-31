@@ -32,17 +32,17 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class UploadNotice extends AppCompatActivity {
+public class UploadNoticeActivity extends AppCompatActivity {
     private ProgressDialog pd;
-    CardView selectImage;
-    Button uploadBtn;
+    private  CardView selectImage;
+    private Button uploadBtn;
    private final int REQ=1;
    private Bitmap bitmap;
    private ImageView image;
-   EditText title;
+    private EditText title;
    private DatabaseReference reference;
    private StorageReference storageReference;
-  String downloadUrl="";
+    private String downloadUrl="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,11 +77,11 @@ public class UploadNotice extends AppCompatActivity {
                 }
                 else if(bitmap==null)
                 {
-                   uploadData();
+                   uploadData();// ye database me dalega
                 }
                 else
                 {
-                   uploadImage();
+                   uploadImage();// ye phle storage me fir waha se database me dalega : uploadDate() function ko call kr ke
                 }
 
 
@@ -113,7 +113,7 @@ public class UploadNotice extends AppCompatActivity {
         filepath=storageReference.child("Notice").child(finalimg+"jpg");
 
         final UploadTask uploadTask=filepath.putBytes(finalimg);
-        uploadTask.addOnCompleteListener(UploadNotice.this, new OnCompleteListener<UploadTask.TaskSnapshot>() {
+        uploadTask.addOnCompleteListener(UploadNoticeActivity.this, new OnCompleteListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
 
@@ -136,7 +136,7 @@ public class UploadNotice extends AppCompatActivity {
                 }
                 else {
                     pd.dismiss();
-                    Toast.makeText(UploadNotice.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UploadNoticeActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -185,13 +185,13 @@ public class UploadNotice extends AppCompatActivity {
             @Override
             public void onSuccess(Void unused) {
                 pd.dismiss();
-                Toast.makeText(UploadNotice.this, "Notice uploaded", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UploadNoticeActivity.this, "Notice uploaded", Toast.LENGTH_SHORT).show();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 pd.dismiss();
-                Toast.makeText(UploadNotice.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UploadNoticeActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
             }
         });
 

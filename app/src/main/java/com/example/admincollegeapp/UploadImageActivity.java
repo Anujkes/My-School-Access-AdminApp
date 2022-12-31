@@ -34,18 +34,18 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class UploadImage extends AppCompatActivity {
+public class UploadImageActivity extends AppCompatActivity {
     private ProgressDialog pd;
     private final int REQ=1;
     private Bitmap bitmap=null;
-   Spinner category;
-   CardView galleryImage;
-   ImageView imageView;
-   Button uploadImageBtn;
+    private  Spinner category;
+    private CardView galleryImage;
+    private ImageView imageView;
+    private Button uploadImageBtn;
    private String categorySelected="";
     private DatabaseReference reference;
     private StorageReference storageReference;
-    String downloadUrl="";
+    private String downloadUrl="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +62,7 @@ public class UploadImage extends AppCompatActivity {
         storageReference= FirebaseStorage.getInstance().getReference();
 
 
-        // gategory array//
+        // category array//
        String [] items=new String[]{"Select Category","Convocation","Independence Day","Others"};
 //----------------------------//
 
@@ -106,11 +106,11 @@ public class UploadImage extends AppCompatActivity {
 
               if(bitmap==null)
                 {
-                    Toast.makeText(UploadImage.this, "Please Upload Image", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UploadImageActivity.this, "Please Upload Image", Toast.LENGTH_SHORT).show();
                 }
               else if(categorySelected=="" || categorySelected=="Select Category")
               {
-                  Toast.makeText(UploadImage.this, "Select category", Toast.LENGTH_SHORT).show();
+                  Toast.makeText(UploadImageActivity.this, "Select category", Toast.LENGTH_SHORT).show();
               }
                 else
                 {
@@ -184,7 +184,7 @@ public class UploadImage extends AppCompatActivity {
         filepath=storageReference.child("Gallery").child(finalimg+"jpg");
 
         final UploadTask uploadTask=filepath.putBytes(finalimg);
-        uploadTask.addOnCompleteListener(UploadImage.this, new OnCompleteListener<UploadTask.TaskSnapshot>() {
+        uploadTask.addOnCompleteListener(UploadImageActivity.this, new OnCompleteListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
 
@@ -207,7 +207,7 @@ public class UploadImage extends AppCompatActivity {
                 }
                 else {
                     pd.dismiss();
-                    Toast.makeText(UploadImage.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UploadImageActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -249,13 +249,13 @@ public class UploadImage extends AppCompatActivity {
             @Override
             public void onSuccess(Void unused) {
                 pd.dismiss();
-                Toast.makeText(UploadImage.this, "Image uploaded", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UploadImageActivity.this, "Image uploaded", Toast.LENGTH_SHORT).show();
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 pd.dismiss();
-                Toast.makeText(UploadImage.this, "Something went wrong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UploadImageActivity.this, "Something went wrong", Toast.LENGTH_SHORT).show();
             }
         });
 

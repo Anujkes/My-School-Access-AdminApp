@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.admincollegeapp.faculty.UpdateFacultyActivity;
+
 public class MainActivity extends AppCompatActivity {
 
-        CardView uploadNotice,uploadImage,uploadEbook,updateFaculty,deleteNotice;
+    private CardView uploadNotice,uploadImage,uploadEbook,updateFaculty,deleteNotice;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(MainActivity.this,UploadNotice.class));
+                startActivity(new Intent(MainActivity.this, UploadNoticeActivity.class));
             }
         });
 
@@ -37,7 +39,23 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(MainActivity.this,UploadImage.class));
+                startActivity(new Intent(MainActivity.this, UploadImageActivity.class));
+            }
+        });
+
+        uploadEbook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, UploadPdfActivity.class));
+            }
+        });
+
+        updateFaculty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MainActivity.this, UpdateFacultyActivity.class));
             }
         });
 

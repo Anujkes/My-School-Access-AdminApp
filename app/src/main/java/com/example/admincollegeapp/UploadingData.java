@@ -2,7 +2,7 @@ package com.example.admincollegeapp;
 
 public class UploadingData {
 
-    String title,image,date,time,key;
+    private String title,image,date,time,key;
 
     public UploadingData() {
     }

@@ -10,10 +10,18 @@
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/color_pink.xml" value="0.1" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/color_purple.xml" value="0.1" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/color_red.xml" value="0.1" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/ic_add.xml" value="0.149" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_add_teacher.xml" value="0.176" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_add_teacher2.xml" value="0.2359375" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_check.xml" value="0.25" />
-        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_update_faculty.xml" value="0.176" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_update_faculty_info.xml" value="0.25" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_upload_image.xml" value="0.25" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_upload_notice.xml" value="0.264" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_upload_pdf.xml" value="0.25" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/faculty_item_layout.xml" value="0.176" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/no_data_found.xml" value="0.24895833333333334" />
       </map>
     </option>
   </component>
