@@ -18,12 +18,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.storage.StorageReference;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class UpdateFacultyActivity extends AppCompatActivity {
+public class UpdateFacultyActivity_And_Faculty_Database extends AppCompatActivity {
 
     private FloatingActionButton fab;
     private RecyclerView cseDept,eceDept,eeDept,meDept,btDept,othersDept;
@@ -80,7 +79,7 @@ public class UpdateFacultyActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(UpdateFacultyActivity.this,AddTeacherActivity.class));
+                startActivity(new Intent(UpdateFacultyActivity_And_Faculty_Database.this,AddTeacherActivity.class));
             }
         });
     }
@@ -114,9 +113,9 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
 
                     othersDept.setHasFixedSize(true);
-                    othersDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity.this));
+                    othersDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity_And_Faculty_Database.this));
 
-                    TeacherAdapter ad=new TeacherAdapter(list,UpdateFacultyActivity.this);
+                    TeacherAdapter ad=new TeacherAdapter(list, UpdateFacultyActivity_And_Faculty_Database.this,"Others");
 
                     othersDept.setAdapter(ad);
 
@@ -127,7 +126,7 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(UpdateFacultyActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpdateFacultyActivity_And_Faculty_Database.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -167,9 +166,9 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
 
                     btDept.setHasFixedSize(true);
-                    btDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity.this));
+                    btDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity_And_Faculty_Database.this));
 
-                    TeacherAdapter ad=new TeacherAdapter(list,UpdateFacultyActivity.this);
+                    TeacherAdapter ad=new TeacherAdapter(list, UpdateFacultyActivity_And_Faculty_Database.this,"BioTechnology");
 
                     btDept.setAdapter(ad);
 
@@ -180,7 +179,7 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(UpdateFacultyActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpdateFacultyActivity_And_Faculty_Database.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -217,9 +216,9 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
 
                     meDept.setHasFixedSize(true);
-                    meDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity.this));
+                    meDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity_And_Faculty_Database.this));
 
-                    TeacherAdapter ad=new TeacherAdapter(list,UpdateFacultyActivity.this);
+                    TeacherAdapter ad=new TeacherAdapter(list, UpdateFacultyActivity_And_Faculty_Database.this,"ME");
 
                     meDept.setAdapter(ad);
 
@@ -230,7 +229,7 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(UpdateFacultyActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpdateFacultyActivity_And_Faculty_Database.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -266,9 +265,9 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
 
                     eeDept.setHasFixedSize(true);
-                    eeDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity.this));
+                    eeDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity_And_Faculty_Database.this));
 
-                    TeacherAdapter ad=new TeacherAdapter(list,UpdateFacultyActivity.this);
+                    TeacherAdapter ad=new TeacherAdapter(list, UpdateFacultyActivity_And_Faculty_Database.this,"EE");
 
                     eeDept.setAdapter(ad);
 
@@ -279,7 +278,7 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(UpdateFacultyActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpdateFacultyActivity_And_Faculty_Database.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -327,9 +326,9 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
 
                     eceDept.setHasFixedSize(true);
-                    eceDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity.this));
+                    eceDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity_And_Faculty_Database.this));
 
-                    TeacherAdapter ad=new TeacherAdapter(list,UpdateFacultyActivity.this);
+                    TeacherAdapter ad=new TeacherAdapter(list, UpdateFacultyActivity_And_Faculty_Database.this,"ECE");
 
                     eceDept.setAdapter(ad);
 
@@ -340,7 +339,7 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(UpdateFacultyActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpdateFacultyActivity_And_Faculty_Database.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -382,9 +381,9 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
 
                     cseDept.setHasFixedSize(true);
-                    cseDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity.this));
+                    cseDept.setLayoutManager(new LinearLayoutManager(UpdateFacultyActivity_And_Faculty_Database.this));
 
-                    TeacherAdapter ad=new TeacherAdapter(list,UpdateFacultyActivity.this);
+                    TeacherAdapter ad=new TeacherAdapter(list, UpdateFacultyActivity_And_Faculty_Database.this,"CSE");
 
                      cseDept.setAdapter(ad);
 
@@ -395,7 +394,7 @@ public class UpdateFacultyActivity extends AppCompatActivity {
 
              @Override
              public void onCancelled(@NonNull DatabaseError error) {
-                 Toast.makeText(UpdateFacultyActivity.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                 Toast.makeText(UpdateFacultyActivity_And_Faculty_Database.this, error.getMessage(), Toast.LENGTH_SHORT).show();
              }
          });
 

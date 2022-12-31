@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.admincollegeapp.faculty.UpdateFacultyActivity;
+import com.example.admincollegeapp.faculty.UpdateFacultyActivity_And_Faculty_Database;
+import com.example.admincollegeapp.notice.DeleteNoticeActivity;
+import com.example.admincollegeapp.notice.UploadNoticeActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,11 +57,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(MainActivity.this, UpdateFacultyActivity.class));
+                startActivity(new Intent(MainActivity.this, UpdateFacultyActivity_And_Faculty_Database.class));
             }
         });
 
-
+        deleteNotice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, DeleteNoticeActivity.class));
+            }
+        });
 
     }
 }

@@ -24,11 +24,13 @@ public class TeacherAdapter extends RecyclerView.Adapter<TeacherAdapter.ViewHold
     //1 data
     private List<TeacherData> list;
     private Context context;
+    private String category;
 
 
-    public TeacherAdapter(List<TeacherData> list, Context context) {
+    public TeacherAdapter(List<TeacherData> list, Context context,String category) {
         this.list = list;
         this.context = context;
+        this.category=category;
     }
 
     @NonNull
@@ -70,12 +72,14 @@ public class TeacherAdapter extends RecyclerView.Adapter<TeacherAdapter.ViewHold
         holder.teacherUpdateBtn.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
+
                Intent i=new Intent(context, UpdateFacultyInfoActivity.class);
                i.putExtra("name",item.getName());
                i.putExtra("email",item.getEmail());
                i.putExtra("post",item.getPost());
                i.putExtra("image",item.getImage());
-
+               i.putExtra("key",item.getKey());
+               i.putExtra("category",category);
                context.startActivity(i);
 
 

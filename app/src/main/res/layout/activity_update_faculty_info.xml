@@ -105,7 +105,7 @@
 
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/teacherDeleteBtn"
+                android:id="@+id/teacherUpdateBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -124,7 +124,7 @@
             </com.google.android.material.button.MaterialButton>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/teacherUpdateBtn"
+                android:id="@+id/teacherDeleteBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"

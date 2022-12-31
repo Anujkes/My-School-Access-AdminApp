@@ -77,8 +77,6 @@
 
                 </TextView>
 
-
-
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/teacherUpdateBtn"
                     android:layout_width="wrap_content"
@@ -86,9 +84,9 @@
                     android:layout_height="wrap_content"
                     android:text="Update Info"
                    android:textColor="#60BEEA"
-
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                   android:layout_marginLeft="30dp"
+                     android:textSize="12sp"
+                 style="@style/Widget.Material3.Button.OutlinedButton"
+                   android:layout_marginLeft="50dp"
                     android:textStyle="bold"
 
                     >
@@ -109,7 +107,7 @@
                 android:layout_width="80dp"
                 android:layout_height="120dp"
                 android:layout_marginRight="3dp"
-                android:src="@drawable/profile1"
+                android:src="@drawable/no_profile"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="0.2"
                 app:civ_border_color="@color/white"

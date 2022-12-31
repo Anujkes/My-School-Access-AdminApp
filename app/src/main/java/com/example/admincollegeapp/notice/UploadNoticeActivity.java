@@ -1,4 +1,4 @@
-package com.example.admincollegeapp;
+package com.example.admincollegeapp.notice;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.admincollegeapp.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -178,7 +179,7 @@ public class UploadNoticeActivity extends AppCompatActivity {
         // title//
         String Title=title.getText().toString();
 
-        UploadingData noticeData=new UploadingData(Title,downloadUrl,date,time,uniqeKey);
+        NoticeData noticeData=new NoticeData(Title,downloadUrl,date,time,uniqeKey);
 
 
         reference.child(uniqeKey).setValue(noticeData).addOnSuccessListener(new OnSuccessListener<Void>() {

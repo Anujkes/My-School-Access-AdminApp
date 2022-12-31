@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".faculty.UpdateFacultyActivity">
+    tools:context=".faculty.UpdateFacultyActivity_And_Faculty_Database">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -98,7 +98,7 @@
              android:textStyle="bold"
              android:textSize="22sp"
              android:textColor="@color/textColor"
-             android:background="@color/pink"
+             android:background="@color/green1"
              ></TextView>
 
          <View
@@ -137,7 +137,7 @@
              ></View>
 
          <TextView
-             android:background="@color/deeppurple"
+             android:background="@color/green1"
 
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
@@ -193,7 +193,7 @@
              android:textStyle="bold"
              android:textSize="22sp"
              android:textColor="@color/textColor"
-             android:background="@color/yellow"
+             android:background="@color/green1"
              ></TextView>
 
          <View
@@ -232,7 +232,7 @@
              ></View>
 
          <TextView
-             android:background="#F46C6C"
+             android:background="@color/green1"
 
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
@@ -287,7 +287,7 @@
              android:textStyle="bold"
              android:textSize="22sp"
              android:textColor="@color/textColor"
-             android:background="#8AEC8F"
+             android:background="@color/green1"
              ></TextView>
 
          <View

@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.admincollegeapp.notice.NoticeData;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -242,7 +243,7 @@ public class UploadImageActivity extends AppCompatActivity {
         String time = curdate.format(calfortime.getTime());
 
 
-        UploadingData ImageData=new UploadingData(categorySelected,downloadUrl,date,time,uniqeKey);
+        NoticeData ImageData=new NoticeData(categorySelected,downloadUrl,date,time,uniqeKey);
 
 
         reference.child(uniqeKey).setValue(ImageData).addOnSuccessListener(new OnSuccessListener<Void>() {

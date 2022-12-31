@@ -17,13 +17,16 @@
         android:theme="@style/Theme.AdminCollegeApp"
         tools:targetApi="31">
         <activity
+            android:name="com.example.admincollegeapp.notice.DeleteNoticeActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.admincollegeapp.faculty.UpdateFacultyInfoActivity"
             android:exported="false" />
         <activity
             android:name="com.example.admincollegeapp.faculty.AddTeacherActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.admincollegeapp.faculty.UpdateFacultyActivity"
+            android:name="com.example.admincollegeapp.faculty.UpdateFacultyActivity_And_Faculty_Database"
             android:exported="false" />
         <activity
             android:name=".UploadPdfActivity"
@@ -32,7 +35,7 @@
             android:name=".UploadImageActivity"
             android:exported="false" />
         <activity
-            android:name=".UploadNoticeActivity"
+            android:name=".notice.UploadNoticeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,13 +1,13 @@
-package com.example.admincollegeapp;
+package com.example.admincollegeapp.notice;
 
-public class UploadingData {
+public class NoticeData {
 
     private String title,image,date,time,key;
 
-    public UploadingData() {
+    public NoticeData() {
     }
 
-    public UploadingData(String title, String image, String date, String time, String key) {
+    public NoticeData(String title, String image, String date, String time, String key) {
         this.title = title;
         this.image = image;
         this.date = date;
