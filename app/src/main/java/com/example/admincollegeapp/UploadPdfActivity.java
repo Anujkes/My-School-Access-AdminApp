@@ -179,15 +179,17 @@ public class UploadPdfActivity extends AppCompatActivity {
     }
     private void uploaData(String downloadPdfUrl) {
 
-        databaseReference=databaseReference.child("Pdf");
+        DatabaseReference myRef;
+        myRef=databaseReference.child("Pdf");
         final String uniqeKey =databaseReference.push().getKey();
 
-        HashMap data=new HashMap();
 
-        data.put("pdfTitle",title);
-        data.put("pdfUrl",downloadPdfUrl);
+        EbookData data=new EbookData(title,downloadPdfUrl);
 
-        databaseReference.child(uniqeKey).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
+
+
+
+        myRef.child(uniqeKey).setValue(data).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 pd.dismiss();

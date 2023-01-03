@@ -224,8 +224,9 @@ public class UploadImageActivity extends AppCompatActivity {
     //------------jo url mila usko title ,date , ke sath RealTime database me store krenge-------------------//
     private void uploadData() {
 
-        reference=reference.child("Gallery").child(categorySelected);
-        final String uniqeKey = reference.push().getKey();
+
+        DatabaseReference myRef=reference.child("Gallery").child(categorySelected);
+        final String uniqeKey = myRef.push().getKey();
 
 
         //-----------for date and time-------------------//
@@ -246,7 +247,7 @@ public class UploadImageActivity extends AppCompatActivity {
         NoticeData ImageData=new NoticeData(categorySelected,downloadUrl,date,time,uniqeKey);
 
 
-        reference.child(uniqeKey).setValue(ImageData).addOnSuccessListener(new OnSuccessListener<Void>() {
+        myRef.child(uniqeKey).setValue(ImageData).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
                 pd.dismiss();

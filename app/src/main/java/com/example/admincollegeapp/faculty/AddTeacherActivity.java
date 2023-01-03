@@ -268,6 +268,7 @@ public class AddTeacherActivity extends AppCompatActivity {
             public void onSuccess(Void unused) {
                 pd.dismiss();
                 Toast.makeText(AddTeacherActivity.this, "Profile Added successfully", Toast.LENGTH_SHORT).show();
+
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
