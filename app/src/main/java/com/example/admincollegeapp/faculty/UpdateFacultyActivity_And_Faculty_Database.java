@@ -35,9 +35,7 @@ public class UpdateFacultyActivity_And_Faculty_Database extends AppCompatActivit
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_faculty);
 
-
-
-        fab=findViewById(R.id.fab);
+  fab=findViewById(R.id.fab);
 
         cseDept=findViewById(R.id.cseDept);
         eceDept=findViewById(R.id.eceDept);
