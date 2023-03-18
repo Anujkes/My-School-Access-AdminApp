@@ -5,17 +5,22 @@
       <map>
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/button.xml" value="0.243" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/circle_green.xml" value="0.1" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/circle_new.xml" value="0.1465" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/circle_pink.xml" value="0.243" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/circle_purple.xml" value="0.1" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/circle_yellow.xml" value="0.1" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/color_pink.xml" value="0.1" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/color_purple.xml" value="0.1" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/color_red.xml" value="0.1" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/ic_add.xml" value="0.149" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/ic_baseline_add_a_photo_24.xml" value="0.1" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_add_teacher.xml" value="0.176" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_add_teacher2.xml" value="0.2359375" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_check.xml" value="0.25" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_delete_notice.xml" value="0.18981481481481483" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_regsiter.xml" value="0.11018518518518519" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_update_faculty.xml" value="0.176" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_update_faculty_info.xml" value="0.25" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_upload_image.xml" value="0.25" />

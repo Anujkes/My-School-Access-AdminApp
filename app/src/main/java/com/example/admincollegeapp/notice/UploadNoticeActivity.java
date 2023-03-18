@@ -171,9 +171,15 @@ public class UploadNoticeActivity extends AppCompatActivity {
 
                //time//
 
-        Calendar calfortime= Calendar.getInstance();
-        SimpleDateFormat curtime=new SimpleDateFormat("hh-mm a");
-        String time = curdate.format(calfortime.getTime());
+        Calendar calendar = Calendar.getInstance();
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        int minute = calendar.get(Calendar.MINUTE);
+
+        String time = hour + ":" + minute;
+
+// Now you can use the currentTime variable as per your need
+
+
 
 
         // title//
