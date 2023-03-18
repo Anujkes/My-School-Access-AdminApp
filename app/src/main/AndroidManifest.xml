@@ -17,16 +17,28 @@
         android:theme="@style/Theme.AdminCollegeApp"
         tools:targetApi="31">
         <activity
-            android:name="com.example.admincollegeapp.notice.DeleteNoticeActivity"
+            android:name=".RegsiterActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.admincollegeapp.faculty.UpdateFacultyInfoActivity"
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".notice.DeleteNoticeActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.admincollegeapp.faculty.AddTeacherActivity"
+            android:name=".faculty.UpdateFacultyInfoActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.admincollegeapp.faculty.UpdateFacultyActivity_And_Faculty_Database"
+            android:name=".faculty.AddTeacherActivity"
+            android:exported="false" />
+        <activity
+            android:name=".faculty.UpdateFacultyActivity_And_Faculty_Database"
             android:exported="false" />
         <activity
             android:name=".UploadPdfActivity"
@@ -39,13 +51,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
