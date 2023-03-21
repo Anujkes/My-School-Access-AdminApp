@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable-v24/ic_register.xml" value="0.153" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/button.xml" value="0.243" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/circle_green.xml" value="0.1" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/drawable/circle_new.xml" value="0.1465" />
@@ -20,6 +21,7 @@
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_delete_notice.xml" value="0.18981481481481483" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_pending_request.xml" value="0.25" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_regsiter.xml" value="0.11018518518518519" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_update_faculty.xml" value="0.176" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/activity_update_faculty_info.xml" value="0.25" />
@@ -30,6 +32,8 @@
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/item.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/no_data_found.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/notice_item_layout.xml" value="0.176" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/pending_request.xml" value="0.25" />
+        <entry key="..\:/Users/anujk/AndroidStudioProjects/AdminCollegeApp/app/src/main/res/layout/pending_request_item_layout.xml" value="0.264" />
       </map>
     </option>
   </component>
